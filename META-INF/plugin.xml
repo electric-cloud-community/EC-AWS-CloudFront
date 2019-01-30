@@ -1,6 +1,6 @@
 <plugin>
-  <key>EC-CloudFront</key>
-  <label>EC-CloudFront</label>
+  <key>EC-AWS-CloudFront</key>
+  <label>EC-AWS-CloudFront</label>
   <version>1.0.0.0</version>
   <author>P. Shubina</author>
   <authorUrl>pshubina@electric-cloud.com</authorUrl>

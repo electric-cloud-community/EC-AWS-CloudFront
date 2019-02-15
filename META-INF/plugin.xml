@@ -2,8 +2,8 @@
   <key>EC-AWS-CloudFront</key>
   <label>EC-AWS-CloudFront</label>
   <version>1.0.0.0</version>
-  <author>P. Shubina</author>
-  <authorUrl>pshubina@electric-cloud.com</authorUrl>
+  <author>Electric Cloud</author>
+  <authorUrl>http://www.electric-cloud.com/support</authorUrl>
   <category>Amazon Web Services</category>
   <commander-version min="6.0" />
   <description></description>

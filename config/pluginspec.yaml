@@ -29,7 +29,7 @@ configuration:
     label: Description
   -
     name: credential
-    documentation: AWS key ID & secret to connect.
+    documentation: AWS key ID and secret to connect.
     required: true
     type: credential
     credentialType: key

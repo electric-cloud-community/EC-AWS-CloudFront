@@ -1,0 +1,4 @@
+1.0.0:
+  - Introduced the EC-AWS-CloudFront plugin
+2.0.0:
+  - Plugin moved to flowpdf.

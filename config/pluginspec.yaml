@@ -1,0 +1,65 @@
+pluginInfo:
+  # This is default sample specification
+  # Feel free to change it
+  # Call flowpdk showdoc pluginspec to see the list of available fields and their description
+  pluginName: EC-AWS-CloudFront
+  version: 2.0.0
+  description: 'This plugin integrates with AWS CloudFront'
+  author: 'Polina'
+  supportUrl: 'pshubina@cloudbees.com'
+  category: 'Amazon Web Services'
+  shell: 'ec-groovy'
+
+# Plugin configuration description
+configuration:
+  # A script for checking connection will be generated
+  hasDebugLevel: true
+  parameters:
+  -
+    name: config
+    documentation: The name for the created configuration
+    required: true
+    type: entry
+    label: Configuration Name
+  -
+    name: desc
+    documentation: Description for the configuration
+    required: false
+    type: entry
+    label: Description
+  -
+    name: credential
+    documentation: AWS key ID & secret to connect.
+    required: true
+    type: credential
+    credentialType: key
+    label: AWS Credentials
+
+procedures:
+
+- name: Invalidate Cache
+  description: Invalidating objects removes them from CloudFront edge caches. A faster and less expensive method is to use versioned object or directory names. For more information, see Invalidating Objects in the Amazon CloudFront Developer Guide.
+  hasConfig: true
+  parameters:
+    - name: distributionId
+      label: Distribution ID
+      documentation: The distribution ID associated with the invalidation.
+      required: true
+      type: entry
+    - name: objectPaths
+      label: Object Path
+      required: true
+      type: textarea
+      documentation: Objects paths, newline-separated.
+    - name: callerReference
+      required: false
+      label: Caller Reference
+      documentation: Caller reference to identify invalidation request.
+    - name: uniqueCallerReference
+      required: false
+      label: Generate Unique Caller Reference
+      documentation: If checked, unique caller reference will be generated automatically.
+      checkedValue: true
+      uncheckedValue: false
+      type: checkbox
+

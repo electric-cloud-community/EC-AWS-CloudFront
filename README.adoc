@@ -1,0 +1,142 @@
+Plugin version 2.0.0
+
+Revised on November 04, 2020
+
+
+
+
+
+== Overview
+
+Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data,
+videos, applications, and APIs to customers globally with low latency, high transfer speeds,
+all within a developer-friendly environment.
+CloudFront is integrated with AWS   both physical locations that are directly connected to the
+AWS global infrastructure, as well as other AWS services. CloudFront works seamlessly with services
+including AWS Shield for DDoS mitigation, Amazon S3, Elastic Load Balancing or Amazon EC2 as origins for your
+applications, and Lambda@Edge to run custom code closer to customers  users and to customize the user experience.
+
+
+
+
+
+
+
+
+
+
+
+== Plugin configurations
+
+Plugin configurations are sets of parameters that apply
+across some or all of the plugin procedures. They
+reduce repetition of common values, create
+predefined parameter sets for end users, and
+securely store credentials where needed. Each configuration
+is given a unique name that is entered in designated
+parameters on procedures that use them.
+
+
+=== Creating plugin configurations
+
+To create plugin configurations in CloudBees CD, do these steps:
+
+* Go to Adminstration -> Plugins to open the Plugin Manager.
+* Find the EC-AWS-CloudFront-2.0.0 row.
+* Click *Configure* to open the
+     Configurations page.
+* Click *Create Configuration* as per the description of parameters below.
+
+
+
+=== Configuration procedure parameters
+
+[cols=",",options="header",]
+|===
+|Parameter |Description
+
+|__**Configuration Name**__ | The name for the created configuration
+
+
+|Description | Description for the configuration
+
+
+|__**AWS Credentials**__ | AWS key ID and secret to connect.
+
+
+|Debug Level | This option sets debug level for logs. If info is selected, only summary information will be shown, for debug, there will be some debug information and for trace the whole requests and responses will be shown.
+
+
+|===
+
+
+
+
+
+[[procedures]]
+== Plugin procedures
+
+
+
+
+[[InvalidateCache]]
+=== Invalidate Cache
+
+
+Invalidating objects removes them from CloudFront edge caches. A faster and less expensive method is to use versioned object or directory names. For more information, see Invalidating Objects in the Amazon CloudFront Developer Guide.
+
+
+
+==== Invalidate Cache parameters
+[cols=",",options="header",]
+|===
+|Parameter |Description
+
+| __**Configuration Name**__ | Previously defined configuration for the plugin
+
+
+| __**Distribution ID**__ | The distribution ID associated with the invalidation.
+
+
+| __**Object Path**__ | Objects paths, newline-separated.
+
+
+| Caller Reference | Caller reference to identify invalidation request.
+
+
+| Generate Unique Caller Reference | If checked, unique caller reference will be generated automatically.
+
+
+|===
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[rns]]
+== Release notes
+
+
+=== EC-AWS-CloudFront 2.0.0
+
+- Plugin moved to flowpdf.
+
+
+=== EC-AWS-CloudFront 1.0.0
+
+- Introduced the EC-AWS-CloudFront plugin
+
+

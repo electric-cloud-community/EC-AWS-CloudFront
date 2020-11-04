@@ -9,6 +9,7 @@ pluginInfo:
   supportUrl: 'pshubina@cloudbees.com'
   category: 'Amazon Web Services'
   shell: 'ec-groovy'
+  repositoryUrl: https://github.com/electric-cloud-community/EC-AWS-CloudFront
 
 # Plugin configuration description
 configuration:

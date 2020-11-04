@@ -10,5 +10,6 @@
   <authorUrl>pshubina@cloudbees.com</authorUrl>
   <help>help.xml</help>
   <depends min='1.4.1'>EC-PluginManager</depends>
+  <repositoryUrl>https://github.com/electric-cloud-community/EC-AWS-CloudFront</repositoryUrl>
   <commander-version min='6.0' />
 </plugin>

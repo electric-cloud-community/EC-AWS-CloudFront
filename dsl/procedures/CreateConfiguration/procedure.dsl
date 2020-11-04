@@ -1,5 +1,5 @@
 
-// DO NOT EDIT THIS BLOCK === configuration starts ===
+// DO NOT EDIT THIS BLOCK BELOW=== configuration starts ===
 procedure 'CreateConfiguration', description: 'Creates a plugin configuration', {
 
     step 'createConfiguration',
@@ -12,5 +12,5 @@ procedure 'CreateConfiguration', description: 'Creates a plugin configuration', 
         timeLimitUnits: 'minutes'
 
     property 'ec_checkConnection', value: ''
-// DO NOT EDIT THIS BLOCK === configuration ends, checksum: 3a9bcf9be26ddf71372e76023a02a335 ===
+// DO NOT EDIT THIS BLOCK ABOVE ^^^=== configuration ends, checksum: 3a9bcf9be26ddf71372e76023a02a335 ===
 }

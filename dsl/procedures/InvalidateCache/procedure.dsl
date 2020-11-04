@@ -1,5 +1,5 @@
 // This procedure.dsl was generated automatically
-// DO NOT EDIT THIS BLOCK === procedure_autogen starts ===
+// DO NOT EDIT THIS BLOCK BELOW=== procedure_autogen starts ===
 procedure 'Invalidate Cache', description: '''Invalidating objects removes them from CloudFront edge caches. A faster and less expensive method is to use versioned object or directory names. For more information, see Invalidating Objects in the Amazon CloudFront Developer Guide.''', {
 
     // Handling binary dependencies
@@ -21,7 +21,7 @@ procedure 'Invalidate Cache', description: '''Invalidating objects removes them 
 
         postProcessor = '''$[/myProject/perl/postpLoader]'''
     }
-// DO NOT EDIT THIS BLOCK === procedure_autogen ends, checksum: 4fb7482619ec1b52f247bb6afb587f52 ===
+// DO NOT EDIT THIS BLOCK ABOVE ^^^=== procedure_autogen ends, checksum: 4fb7482619ec1b52f247bb6afb587f52 ===
 // Do not update the code above the line
 // procedure properties declaration can be placed in here, like
 // property 'property name', value: "value"
